@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Studi kasus : tukar warna </title>
+    <style>
+        
+        body {
+            margin: 0 auto;
+            max-width: 768px;
+            background-color: #efefef;
+        }
+        #container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+        }
+        .color {
+            padding: 12px;
+            width: 100%;
+            height: 100%;
+        }
+        .color.color-red {
+            background-color: #bb0000;
+        }
+        .color.color.color-red > .button {
+            background-color: #ff9000;
+            border-radius: 1px;
+            padding: 3px;
+            border: none;
+            color: white;
+        }
+        .color.color-orange {
+            background-color: #ff9000;
+        }
+        .color.color.color-orange > .button {
+            background-color: #bb0000;
+            border-radius: 1px;
+            padding: 3px;
+            border: none;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- root app -->
+    <div id="container"></div>
+
+    <!-- asset js && app -->
+    <script src="https://unpkg.com/@babel/standalone/babel.js"></script>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="/changecolor.jsx" type="text/babel"></script>
+</body>
+
+</html>
